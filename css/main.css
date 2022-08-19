@@ -120,7 +120,7 @@ button {
 .nav-menu.active {
     /* display: block; */
     opacity: 1;
-    transition: 0.3s;
+    transition: 0.2s;
     height: auto;
     padding-top: 30px;
 }
@@ -287,7 +287,14 @@ footer span {
     }
 
     .nav-menu {
-        display: flex;
+        opacity: 1;
+        border: none;
+        height: auto;
+    }
+
+    .nav-menu.active {
+        padding-top: 0;
+        transition: 0.0s;
     }
 
     header nav {
