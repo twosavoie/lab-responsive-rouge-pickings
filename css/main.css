@@ -241,6 +241,7 @@ footer span {
     .nav-menu.active {
         display: flex;
         justify-content: space-around;
+        transition: 0.5s;
     }
     .bottom-section {
         justify-content: space-between;
