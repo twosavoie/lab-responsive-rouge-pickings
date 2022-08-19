@@ -1,0 +1,297 @@
+html{
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.container {
+	max-width: 1200px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+	font-size: 1.125em;
+}
+h3 {
+	font-size: .75em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 21px;
+}
+
+ul {
+    margin: 0;
+}
+
+/*The widths are in a percentage!*/
+header {
+	border-bottom: 3px solid #77a466;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+/* hamburger menu while this works - I don't like how it slides out over the headers and the icon is centered but the slide out is nice :) */
+/* like the slideout less now would rather slide down and for it to disappear */
+/* this code requires changes in the index.html file, main.css file, and the main.js file */
+/* Style the navigation menu */
+.button-container {
+    /* display: flex;
+    justify-content: flex-end; */
+    float: right;
+    text-align: right;
+  }
+  
+  nav {
+    text-align: left;
+  }
+  
+  nav ul {
+    text-align: center;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  button {
+    background: transparent;
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+  }
+  
+  /* Switch back to non-responsive nav at landscape tablet (iPad mini) ? make larger? */
+  @media only screen and (max-width: 1023px) {
+    .nav-menu {
+      position: fixed;
+      /* if I remove left, the menu comes down from the top of the screen */
+      left: -100%;
+      /* top: 5rem; */
+      top: -100%; 
+      flex-direction: column;
+      background-color: var(--dark-primary);
+      background-color: #373e5b;
+      background-color: rgba(55, 62, 91, 0.97);
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      transition: 0.5s;
+      box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+        /* display: none; */
+    }
+  
+    .nav-menu.active {
+      left: 0;
+      /* allows the menu to land under the button */
+      top: 5rem; 
+      /* display: block; */
+    }
+    /* .hide {
+      display:none;
+    } */
+    .nav-item {
+      margin: 2.5rem 0;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+  }
+  
+  /* end hamburger menu */
+header h1 {
+	margin: 0;
+    padding: 38px 20px 20px 20px; 
+    border-bottom: 3px solid #77a466; 
+    width: 100%;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+    padding: 20px 0; 
+    width: 100%; 
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .875em;
+    padding: 10px 0;
+    list-style: none;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+    color: #77a466;
+}
+
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.5625;
+}
+
+.section-one,
+.section-two,
+.section-three {
+    border-top: 1px solid #eee;
+    width: 100%;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.3125;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	border-top: 3px solid #eee;
+    text-align: center;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: .875em;
+}
+
+@media only screen and (min-width: 768px) {
+    .bottom-section{
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 1px solid #eee;
+    }
+
+    .section-one,
+    .section-two,
+    .section-three {
+        border-top: none;
+        flex-basis: 30%;
+    }
+
+    .section-two {
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        width: 30%;
+        padding: 0;
+        border-bottom: none;
+        text-align: left;
+    }
+
+    header nav {
+        width: 40%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
