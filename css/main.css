@@ -61,12 +61,6 @@ header {
 
 /* this code requires changes in the index.html file, main.css file, and the main.js file */
 /* Style the navigation menu */
-
-/* Switch back to non-responsive nav at landscape tablet (iPad mini) ? make larger? */
-/* @media only screen and (max-width: 1023px) { */
-/* in example this was outside of media query - but I think it should be inside. */
-/* also, do I need a media query? */
-/* WHY DOES THIS NOT WORK!!! */
 .button-container {
     display: flex;
     justify-content: flex-end;
@@ -87,7 +81,7 @@ button {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: black;
+    background-color: #77a466;
 }
 
 /* makes the hamburger menu appear */
@@ -124,14 +118,12 @@ button {
     padding-top: 30px;
 }
 
-/* } */
-
-/* animates the hamburger menu to change into an x */
+/* end animates the hamburger menu to change into an x */
 /* end hamburger menu */
+
 header h1 {
     margin: 0;
-    padding: 38px 20px 20px 20px;
-    /* border-bottom: 3px solid #77a466; */
+    padding: 38px 20px 15px 20px;
     width: 100%;
 }
 
@@ -140,7 +132,8 @@ header h1 span {
 }
 
 header nav {
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    padding: 0 0 20px 0;
     width: 100%;
 }
 
@@ -278,6 +271,7 @@ footer span {
 
     header nav {
         width: 40%;
+        padding: 20px 0;
     }
 
     header nav ul {
