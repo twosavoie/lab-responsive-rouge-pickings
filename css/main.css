@@ -103,6 +103,7 @@ button {
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
+
 /* using display: none and display: block means that the nav pops immediately. using opacity and height means it eases just a bit */
 .nav-menu {
     /* display: none; */
@@ -121,7 +122,6 @@ button {
     opacity: 1;
     transition: 0.3s;
     height: auto;
-    border-top: 3px solid #77a466;
     padding-top: 30px;
 }
 
@@ -142,6 +142,10 @@ header nav {
     /* padding: 20px 0; */
     padding: 0 0 20px 0;
     width: 100%;
+}
+
+.nav-menu {
+    border-top: 3px solid #77a466;
 }
 
 header nav ul {
@@ -238,11 +242,13 @@ footer span {
     button {
         padding-top: 30px;
     }
+
     .nav-menu.active {
         display: flex;
         justify-content: space-around;
         transition: 0.5s;
     }
+
     .bottom-section {
         justify-content: space-between;
         align-items: flex-start;
